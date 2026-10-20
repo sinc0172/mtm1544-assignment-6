@@ -14,15 +14,16 @@
 }
 
 #page {
-    width: 1440px;
+    display: grid;
+    width: 1200px;
     grid-template-areas: 
         "head head head"
         "hero hero hero"
         "side gallery gallery"
         "foot foot foot";
     margin: 0 0 0 120px;
-    grid-template-rows: 88px 1fr 2fr 0.5fr;
-    grid-template-columns: 256 912 912;
+    grid-template-rows: 88px 0.5fr 1fr auto;
+    grid-template-columns: 256 1fr 1fr;
 }
 
 /* section heading */
@@ -93,6 +94,7 @@ ul {
     font-weight: regular 400;
     color: var(--ink);
     list-style: none;
+    margin: 0;
 }
 
 #footxt {
@@ -113,7 +115,7 @@ ul {
 
 /* section by section */
 /* header */
-#header {
+.header {
     grid-area: head;
     display: flex;
     justify-content: space-between;
@@ -133,7 +135,6 @@ h1 {
 }
 
 #main-nav {
-    grid-area: head;
     display: flex;
     gap: 32px;
     font-family: system-ui, 'Helvetica Neue', sans-serif;
@@ -173,4 +174,21 @@ h2 {
     line-height: 28px;
     font-weight: regular 400;
     color: var(--line);
+}
+
+/* sidebar section */
+
+.sidebar {
+    background-color: var(--accent-soft);
+}
+
+#gallery {
+    background-color: var(--accent-soft);
+}
+
+.foot {
+    grid-area: foot;
+    display: grid;
+    gap: 32px;
+    background-color: var(--ink);
 }
