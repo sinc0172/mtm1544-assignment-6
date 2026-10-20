@@ -14,34 +14,15 @@
 }
 
 #page {
-    display: grid;
-    width: 100%;
+    width: 1440px;
     grid-template-areas: 
         "head head head"
         "hero hero hero"
-        "side galler gallery"
-        "footer footer footer";
-}
-
-/* typography */
-/* wordmark */
-h1 {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: bold 700;
-    letter-spacing: +2%;
-    text-transform: uppercase;
-    color: var(--ink);
-}
-
-/* hero headline */
-h2 {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: bold 700;
-    color: var(--surface);
+        "side gallery gallery"
+        "foot foot foot";
+    margin: 0 0 0 120px;
+    grid-template-rows: 88px 1fr 2fr 0.5fr;
+    grid-template-columns: 256 912 912;
 }
 
 /* section heading */
@@ -97,15 +78,6 @@ h6 {
     color: var(--ink);
 }
 
-/* hero lede */
-#lede {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: regular 400;
-    color: var(--line);
-}
-
 p {
     font-family: system-ui, 'Helvetica Neue', sans-serif;
     font-size: 16px;
@@ -123,22 +95,82 @@ ul {
     list-style: none;
 }
 
-#inactive {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: medium 400;
-    color: var(--muted);
+#footxt {
+    color: var(--line)
 }
 
-#active {
+#quote {
     font-family: system-ui, 'Helvetica Neue', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: medium 400;
+    font-weight: bold 700;
+    color: var(--surface);
+    background-color: var(--accent);
+    padding: 16px 32px 16px 32px;
+    border: none;
+    border-radius: 2px;
+}
+
+/* section by section */
+/* header */
+#header {
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--surface);
+}
+
+/* wordmark */
+h1 {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold 700;
+    letter-spacing: +2%;
+    text-transform: uppercase;
     color: var(--ink);
 }
 
-#footxt {
-    color: var(--line)
+#main-nav {
+    grid-area: head;
+    display: flex;
+    gap: 32px;
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: medium 400;
+}
+
+#active {
+    color: var(--ink);
+} 
+
+#inactive {
+    color: var(--muted);
+}
+
+/* hero section */
+
+#hero {
+    background-color: var(--ink);
+    padding: 64 120 64 120;
+}
+
+/* hero headline */
+h2 {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold 700;
+    color: var(--surface);
+}
+
+/* hero lede */
+#lede {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: regular 400;
+    color: var(--line);
 }
