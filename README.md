@@ -1,6 +1,11 @@
 # mtm1544-assignment-6
 Week 6 Assignment: Grid Page Layout
 
+## What's Missing
+My grid was inaccurate and not working properly for a majority of my coding process, and I was unsure of how to fix it for a long time. The header and hero section are accurate to the mockup. The sidebar is relatively accurate, however the spacing between the items in the list is too tight. 
+
+My cards in the gallery section are not properly set up to reflect the mockup. They are contained within their respective section, but not accurate to size or display due to my lack of proper knowledge with flexbox and grid display. The footer is also inaccurate, with each column being too large. I felt as though I was close to completing the footer properly, but ran out of time. 
+
 ## Palette
 | Token | Hex | Used For |
 | ink | #14202E | Hero and footer background. Headings and body text on light backgrounds 

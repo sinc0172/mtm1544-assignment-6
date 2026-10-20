@@ -21,7 +21,7 @@
         "hero hero hero"
         "side gallery gallery"
         "foot foot foot";
-    grid-template-rows: 88px 0.5fr 1fr auto;
+    grid-template-rows: 88px 1fr auto;
     grid-template-columns: 256 1fr 1fr;
 }
 
@@ -51,24 +51,12 @@ h5 {
     margin: 0 0 0 120px;
 }
 
-h6 {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: medium 500;
-    color: var(--ink);
-}
-
 p {
     font-family: system-ui, 'Helvetica Neue', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: regular 400;
     color: var(--ink);
-}
-
-#footxt {
-    color: var(--line)
 }
 
 
@@ -168,25 +156,19 @@ h4 {
 .sidebar {
     grid-area: side;
     margin: 0 0 0 120px;
+    padding: 64px 0 0 0;
 }
 
-/* section heading */
-h3 {
+h6 {
     font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: bold 700;
+    font-size: 16px;
+    font-weight: medium 500;
     color: var(--ink);
-    margin: 0 0 0 120px;
 }
 
 #side {
     color: var(--muted)
     margin: 0 0 0 120px;
-}
-
-#label {
-    color: var(--accent);
 }
 
 ul {
@@ -200,16 +182,52 @@ ul {
 }
 
 #turnaround {
-    background-color: var(--accent-soft)
+    grid-area: side;
+    background-color: var(--accent-soft);
+    padding: 12px 24px 12px 24px;
+    width: 256px;
 }
 
+/* gallery cards */
+
+/* section heading */
+h3 {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold 700;
+    color: var(--ink);
+    margin: 0 0 0 120px;
+}
+
+#label {
+    color: var(--accent);
+}
 
 #gallery {
     grid-area: gallery;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 24px;
 }
+
+#editions {
+    flex: 1;
+    flex-basis: 300px;
+    background-color: var(--surface);
+    border-radius: 2px;
+}
+
+/* footer */
 
 .foot {
     grid-area: foot;
-    gap: 32px;
+    display: flex;
     background-color: var(--ink);
+}
+
+#footxt {
+    color: var(--line)
 }
