@@ -15,42 +15,18 @@
 
 #page {
     display: grid;
-    width: 1200px;
+    width: 1440px;
     grid-template-areas: 
         "head head head"
         "hero hero hero"
         "side gallery gallery"
         "foot foot foot";
-    margin: 0 0 0 120px;
     grid-template-rows: 88px 0.5fr 1fr auto;
     grid-template-columns: 256 1fr 1fr;
 }
 
-/* section heading */
-h3 {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: bold 700;
-    color: var(--ink);
-}
-
-h4 {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: semibold 600;
-    letter-spacing: +8%;
-    text-transform: uppercase;
-    color: var(--accent-soft);
-}
-
-#side {
-    color: var(--muted)
-}
-
-#label {
-    color: var(--accent);
+.main {
+    background-color: var(--paper)
 }
 
 /* card title */
@@ -60,6 +36,8 @@ h5 {
     line-height: 28px;
     font-weight: semibold 600;
     color: var(--ink);
+    width: 1200px;
+    margin: 0 0 0 120px;
 }
 
 /* featured card title */
@@ -69,6 +47,8 @@ h5 {
     line-height: 36px;
     font-weight: semibold 600;
     color: var(--ink);
+    width: 1200px;
+    margin: 0 0 0 120px;
 }
 
 h6 {
@@ -87,31 +67,10 @@ p {
     color: var(--ink);
 }
 
-ul {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: regular 400;
-    color: var(--ink);
-    list-style: none;
-    margin: 0;
-}
-
 #footxt {
     color: var(--line)
 }
 
-#quote {
-    font-family: system-ui, 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold 700;
-    color: var(--surface);
-    background-color: var(--accent);
-    padding: 16px 32px 16px 32px;
-    border: none;
-    border-radius: 2px;
-}
 
 /* section by section */
 /* header */
@@ -120,6 +79,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
+    margin: 0 0 0 120px;
     background-color: var(--surface);
 }
 
@@ -155,7 +116,8 @@ h1 {
 
 #hero {
     background-color: var(--ink);
-    padding: 64 120 64 120;
+    padding: 64px 120px;
+    width: 100%;
 }
 
 /* hero headline */
@@ -165,6 +127,7 @@ h2 {
     line-height: 48px;
     font-weight: bold 700;
     color: var(--surface);
+    width: 1200px;
 }
 
 /* hero lede */
@@ -174,21 +137,79 @@ h2 {
     line-height: 28px;
     font-weight: regular 400;
     color: var(--line);
+    width: 720px;
+}
+
+h4 {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: semibold 600;
+    letter-spacing: +8%;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+    width: 1200px;
+}
+
+#quote {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold 700;
+    color: var(--surface);
+    background-color: var(--accent);
+    padding: 16px 32px 16px 32px;
+    border: none;
+    border-radius: 2px;
 }
 
 /* sidebar section */
 
 .sidebar {
-    background-color: var(--accent-soft);
+    grid-area: side;
+    margin: 0 0 0 120px;
 }
 
+/* section heading */
+h3 {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold 700;
+    color: var(--ink);
+    margin: 0 0 0 120px;
+}
+
+#side {
+    color: var(--muted)
+    margin: 0 0 0 120px;
+}
+
+#label {
+    color: var(--accent);
+}
+
+ul {
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: regular 400;
+    color: var(--ink);
+    list-style: none;
+    padding: 0; 
+}
+
+#turnaround {
+    background-color: var(--accent-soft)
+}
+
+
 #gallery {
-    background-color: var(--accent-soft);
+    grid-area: gallery;
 }
 
 .foot {
     grid-area: foot;
-    display: grid;
     gap: 32px;
     background-color: var(--ink);
 }
