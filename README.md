@@ -36,3 +36,37 @@ Everything is a multiple of 8.
 | 32 | 32px | Nav link gap, sidebar to main gap, button horizontal padding, main section gap |
 | 48 | 48px | Footer vertical padding |
 | 64 | 64px | Hero and body vertical padding, footer column gap |
+
+## Layout
+
+| Measurement | Value |
+|---|---|
+| Frame width | 1440 |
+| Page side margin | 120 |
+| Content width | 1200 |
+| Sidebar width | 256, fixed |
+| Column gap | 32 |
+| Main column width | 912 |
+| Gallery gutter | 24 |
+| Card width | 288 |
+| Featured card width | 600 |
+| Header height | 88, with a 1px bottom rule in `line` |
+| Hero padding | 64 top and bottom, 120 left and right |
+| Hero lede max width | 720 |
+| Body padding | 64 top and bottom, 120 left and right |
+| Footer padding | 48 top and bottom, 120 left and right |
+| Corner radius | 2, on cards, the button and the sidebar note |
+| Card border | 1px, `line` |
+
+## Repeating component
+
+| | |
+|---|---|
+| Name | Card |
+| Appears | 5 times, one of them stretched |
+| Width | 288, or 600 for the featured card |
+| Internal padding | 24 on all four sides of the text block |
+| Internal gap | 8 between category, title and blurb |
+| Image block | Full card width, 180 tall, a photograph cropped to fill |
+| What varies between instances | Category label, title, blurb, and therefore height |
+| What stays fixed | Width, image height, padding, gap, border, radius, all type sizes except the featured title |
